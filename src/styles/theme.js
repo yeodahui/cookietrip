@@ -18,7 +18,7 @@ const fontSizes = {
   xl: pixelToRem(21),
   lg: pixelToRem(18),
   base: pixelToRem(16),
-  small: pixelToRem(14),
+  sm: pixelToRem(14),
 };
 
 const colors = {
@@ -27,10 +27,10 @@ const colors = {
   button: "#1e1e1e",
   text: "#222",
   buttontext: "#eee",
-  greytext: "#ddd",
-  primary: "#8015E0",
-  secondary: "#EADCF7",
-  error: "#ff6e40",
+  greytext: "#bbb",
+  primary: "#ff4826",
+  secondary: "#fee1dc",
+  error: "#ff4048",
   caution: "#ffee58",
   sucsses: "#69f0ae",
 };
