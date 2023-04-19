@@ -8,6 +8,7 @@ body {
   font-size: 10px;
   min-height: 100vh;
   display: flex;
+  background-color: ${({ theme }) => theme.colors.background};
 }
 `;
 
