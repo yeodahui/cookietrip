@@ -13,13 +13,16 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  font-size: ${({ theme }) => theme.fontSizes.base};
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  font-size: ${({ theme }) => theme.fontSizes.base};
   background-color: ${({ theme }) => theme.colors.background};
-
+  
   #root {
     width: 100%;
+    min-height: 100vh;
+    position: relative;
   }
 }
 `;
