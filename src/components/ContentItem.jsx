@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import styled from "styled-components";
+import MarkButton from "./buttons/MarkButton";
 
-const ContentItem = ({ description, name, image, location, ...props }) => {
+const ContentItem = ({
+  description,
+  name,
+  image,
+  location,
+  markable,
+  ...props
+}) => {
   return (
     <StyledContentItem className="item">
       <div className="container">
@@ -12,6 +20,7 @@ const ContentItem = ({ description, name, image, location, ...props }) => {
           </p>
           <p className="location">부산 금정구, 1km</p>
         </div>
+        {markable ? <MarkButton topright={true} /> : null}
       </div>
     </StyledContentItem>
   );
@@ -31,7 +40,7 @@ const StyledContentItem = styled.li`
     width: 100%;
     height: 40%;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent, #00000055);
+    background: linear-gradient(to bottom, transparent, #000000cc);
   }
 
   .image {

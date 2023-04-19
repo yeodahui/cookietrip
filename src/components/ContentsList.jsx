@@ -2,24 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import ContentItem from "./ContentItem";
 
-const ContentsList = ({ title, description, contents, ...props }) => (
-  <StyledContentsList>
-    <h3 className="title">{title}</h3>
-    {description ? <p className="description">{description}</p> : null}
-    <ul className="list">
-      {contents.map((item, i) => (
-        <ContentItem
-          key={`${i}`}
-          description={item.description}
-          name={item.name}
-          image={item.image}
-        />
-      ))}
-    </ul>
-  </StyledContentsList>
-);
+const ContentsList = ({ title, description, contents, markable, ...props }) => {
+  return (
+    <StyledContentsList>
+      <h3 className="title">{title}</h3>
+      {description ? <p className="description">{description}</p> : null}
+      <ul className="list">
+        {contents.map((item, i) => (
+          <ContentItem
+            key={`${i}`}
+            description={item.description}
+            markable={markable}
+            name={item.name}
+            image={item.image}
+          />
+        ))}
+      </ul>
+    </StyledContentsList>
+  );
+};
 
-const StyledContentsList = styled.section`
+const StyledContentsList = styled.article`
   margin-top: 10px;
   padding: 30px 20px;
   background-color: ${({ theme }) => theme.colors.field};
