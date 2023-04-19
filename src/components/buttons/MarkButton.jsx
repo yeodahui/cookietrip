@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { ReactComponent as MarkIcon } from "../../assets/bookmark.svg";
-import { ReactComponent as FilledMarkIcon } from "../../assets/bookmark-filled.svg";
+import { ReactComponent as MarkIcon } from "../../assets/icons/bookmark.svg";
+import { ReactComponent as FilledMarkIcon } from "../../assets/icons/bookmark-filled.svg";
 
 const MarkButton = ({ topright }) => {
   const [marked, setMarked] = useState(false);
