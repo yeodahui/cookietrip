@@ -2,19 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import ControlArea from "../components/ControlArea";
 import MediaContainer from "../components/MediaContainer";
-import PlaceInfoCard from "../components/PlaceInfoCard";
 
 const ExplorePage = (props) => {
   const card = cards[0];
 
   return (
-    <>
-      <StyledContainer>
-        <MediaContainer media={card.media} />
-        <ControlArea data={card} />
-        <PlaceInfoCard data={card} />
-      </StyledContainer>
-    </>
+    <StyledContainer>
+      <MediaContainer media={card.media} />
+      <ControlArea data={card} />
+    </StyledContainer>
   );
 };
 

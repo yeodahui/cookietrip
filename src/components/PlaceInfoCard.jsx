@@ -25,17 +25,8 @@ const PlaceInfoCard = ({ data }) => {
 };
 
 const StyledCard = styled.div`
-  width: 350px;
-  height: 90%;
   padding: 30px 20px 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-
-  border-radius: 30px;
-  background-color: ${({ theme }) => theme.colors.field};
-  box-shadow: 0 0 20px #ffffff, 0 5px 30px #000000a9;
+  color: ${({ theme }) => theme.colors.text};
 
   .info_list {
     .item:not(:last-child) {
